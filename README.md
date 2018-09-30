@@ -1,2 +1,2 @@
 # Classifile
-An Android Application prototype exclusive to organisation of Document Images.
+An Android Gallery Application prototype exclusively built to organise Document Images.
