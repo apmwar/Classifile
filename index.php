@@ -30,7 +30,24 @@
       .footer {
         background-color: black;
         width: 100vw;
+      }
 
+      .frame {
+        height: 300px;
+        width: 155px;
+        background-color: transparent;
+        margin-left: 50%;
+        left: -77px;
+        z-index: 3;
+      }
+
+      .owl-carousel {
+        height: 300px;
+        width: 155px;
+        margin-left: 60%;
+        left: -67px;
+        margin-top: -300px;
+        z-index: 2;
       }
 
     </style>
@@ -46,11 +63,45 @@
       </div>
     </section>
 
+    <img src="res/images/frame.png" class="frame">
+
+    <div class="owl-carousel">
+      <img src="res/images/sc1.png" />
+      <img src="res/images/sc2.png" />
+      <img src="res/images/sc3.png" />
+      <img src="res/images/sc4.png" />
+      <img src="res/images/sc5.png" />
+      <img src="res/images/sc6.png" />
+      <img src="res/images/sc7.png" />
+      <img src="res/images/sc8.png" />
+      <img src="res/images/sc9.png" />
+      <img src="res/images/sc10.png" />
+    </div>
+
     <section class='footer'>
 
     </section>
 
     <script type='text/javascript'>
+
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          margin: 20,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+          lazyLoad: true,
+          responsiveClass: true,
+          center: true
+        });
+
+      });
+
+
+
+
 
     </script>
 
