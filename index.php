@@ -7,10 +7,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -27,27 +25,27 @@
 
     <style>
 
+      body {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
       .footer {
         background-color: black;
         width: 100vw;
       }
 
-      .frame {
-        height: 300px;
-        width: 155px;
-        background-color: transparent;
-        margin-left: 50%;
-        left: -77px;
-        z-index: 3;
-      }
-
       .owl-carousel {
-        height: 300px;
-        width: 155px;
-        margin-left: 60%;
-        left: -67px;
-        margin-top: -300px;
-        z-index: 2;
+        background: url('res/images/frame.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 200px;
+        height: auto;
+        margin-left: 50%;
+        left: -100px;
+        padding: 20px 25px 20px 24px;
       }
 
     </style>
@@ -63,6 +61,7 @@
       </div>
     </section>
 
+    <br><br><br><br><br><br><br>
     <img src="res/images/frame.png" class="frame">
 
     <div class="owl-carousel">
@@ -78,10 +77,6 @@
       <img src="res/images/sc10.png" />
     </div>
 
-    <section class='footer'>
-
-    </section>
-
     <script type='text/javascript'>
 
       $(document).ready(function(){
@@ -89,7 +84,6 @@
           items: 1,
           loop: true,
           autoplay: true,
-          margin: 20,
           autoplayTimeout: 4000,
           autoplayHoverPause: true,
           lazyLoad: true,
@@ -98,10 +92,6 @@
         });
 
       });
-
-
-
-
 
     </script>
 
