@@ -61,9 +61,6 @@
       </div>
     </section>
 
-    <br><br><br><br><br><br><br>
-    <img src="res/images/frame.png" class="frame">
-
     <div class="owl-carousel">
       <img src="res/images/sc1.png" />
       <img src="res/images/sc2.png" />
