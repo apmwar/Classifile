@@ -9,10 +9,11 @@
     <!-- boostrap stylesheets -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-		<!-- bootstrap scripts-->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Bootstrap script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 
 		<!-- ajax and jquery dependencies -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -33,12 +34,34 @@
     <style>
 
       body {
-        width: 100%;
-        height: 400%;
         position: absolute;
-        overflow-x: hidden;
         top: 0;
         left: 0;
+        height: 400vh;
+        overflow-x: hidden;
+      }
+
+      .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 12vh;
+        width: 100vw;
+        background-color: transparent;
+      }
+
+      .sticky {
+        position: fixed;
+        top: -500px;
+        left: 0;
+        opacity: 0;
+        height: 0vh;
+        width: 100vw;
+        background-color: #FFF;
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.23);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.23);
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.23);
+        z-index: 5;
       }
 
       .text {
@@ -52,38 +75,12 @@
 
 
 
-      .navbar {
-        height: 12vh;
-        width: 100vw;
-        position: fixed;
-        left: 0;
-        top: 0;
-        background: red;
-      }
 
-      .sticky {
-        position: fixed;
-        background: black;
-        height: 9vh;
-        -webkit-animation-name: fadeInDown;
-        animation-name: fadeInDown;
-        animation-duration: 2s;
-      }
-
-      .nosticky {
-        -webkit-animation-name: fadeOutUp;
-        animation-name: fadeOutUp;
-        animation-duration: 0.1s;
-      }
 
       @media only screen and (max-width: 600px) {
 
         body {
-          overflow-x: visible;
-        }
-
-        .navbar {
-          height: 12%;
+          /*overflow-x: visible;*/
         }
 
       }
@@ -96,8 +93,10 @@
 
   <body>
 
-    <div class="nav">hello</div>
-		<div class="sticky">heelo</div>
+    <!-- Navbar Section -->
+    <div class="nav"></div>
+		<div class="sticky"></div>
+
 
 
 
@@ -135,6 +134,7 @@
 					}
 				});
 			});
+
 
 
     </script>
