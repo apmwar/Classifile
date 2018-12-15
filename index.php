@@ -29,7 +29,7 @@
     <script src="res/js/owl.carousel.min.js"></script>
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rajdhani" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Poppins" rel="stylesheet">
 
     <style>
 
@@ -37,8 +37,21 @@
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
         height: 400vh;
+        font-size: 15px;
         overflow-x: hidden;
+      }
+
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        margin-top: 15vh;
+        padding-left: 100px;
+        padding-right: 100px;
+        max-width: 99vw;
       }
 
       .nav {
@@ -47,7 +60,7 @@
         left: 0;
         height: 12vh;
         width: 100vw;
-        background-color: transparent;
+        background-color: black;
       }
 
       .sticky {
@@ -65,23 +78,86 @@
       }
 
       .text {
-        font-family: 'Open Sans';
+        font-family: 'Roboto';
+        font-size: 150%;
+        line-height: 1.2;
       }
 
-      .heading {
-        font-family: 'Rajdhani';
+      .heading{
+        font-family: 'Poppins';
+        font-size: 300%;
+        line-height: 1.2;
+      }
+
+      .subheading {
+        font-family: 'Roboto';
+        font-size: 200%;
+        line-height: 1.2;
+      }
+
+      .featurepic {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-image: url("res/images/feature.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .ficon {
+        height: 100px;
+        width: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
       }
 
 
+      @media only screen and (max-width: 1200px) {
 
+        body {
+          font-size: 14px;
+        }
 
+        .container {
+          padding-left: 50px;
+          padding-right: 50px;
+        }
 
+      }
 
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 769px) {
 
         body {
           /*overflow-x: visible;*/
+          font-size: 13px;
         }
+
+        .container {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+
+      }
+
+      @media only screen and (max-width: 500px) {
+
+        body {
+          /*overflow-x: visible;*/
+          font-size: 12px;
+
+        }
+
+        .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+
+      }
+
 
       }
 
@@ -94,8 +170,72 @@
   <body>
 
     <!-- Navbar Section -->
-    <div class="nav"></div>
-		<div class="sticky"></div>
+    <div class="nav">
+
+    </div>
+		<div class="sticky">
+      <!-- Normal navbar -->
+
+      <!-- Menu Button Navbar -->
+
+    </div>
+
+    <!-- Contents start here -->
+    <div class="container">
+
+      <!-- Home Page section -->
+      <br><br><br>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="heading"><strong>Redefining<br>Document Storage</strong></div><br>
+          <div class="text">Classifile is an Android Application that helps you organise documents easily.</div><br><br>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="heading pad"><strong>Heading</strong></div><br>
+          <div class="text pad">This is a description</div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <br><br><br>
+      <div class="row">
+        <div class="col-sm-12 text-center"><div class="heading"><strong>Features</strong></div></div><br><br>
+      </div>
+
+      <br><br><br>
+      <div class="row">
+
+        <!-- Left Side -->
+        <div class="col-md-4">
+          <div class="ficon" style="background-image: url('res/icons/f1.png');"></div>
+          <div class="subheading pad"><strong>Feature 1</strong></div><br>
+          <div class="text pad">This is a description of some sorts. Isn't making websites fun??</div><br><br><br>
+          <div class="subheading pad"><strong>Feature 2</strong></div><br>
+          <div class="text pad">This is a description of some sorts. Isn't making websites fun??</div><br><br><br>
+          <div class="subheading pad"><strong>Feature 3</strong></div><br>
+          <div class="text pad">This is a description of some sorts. Isn't making websites fun??</div><br><br><br>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="col-md-4 featurepic"></div>
+
+        <!-- Right Section-->
+        <div class="col-md-4">
+          <div class="subheading pad"><strong>Feature 4</strong></div><br>
+          <div class="text pad">This is a description of some sorts. Isn't making websites fun??</div><br><br><br>
+          <div class="subheading pad"><strong>Feature 5</strong></div><br>
+          <div class="text pad">This is a description of some sorts. Isn't making websites fun??</div><br><br><br>
+          <div class="subheading pad"><strong>Feature 6</strong></div><br>
+          <div class="text pad">This is a description of some sorts. Isn't making websites fun??</div><br><br><br>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
 
 
 
